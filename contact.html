@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &mdash; Martha's Country Bakery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Martha's Country Bakery logo" />
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
+    <h1>Get in Touch</h1>
+    <p>Questions, feedback, or special requests — we'd love to hear from you.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-two-col" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+
+        <!-- Contact Info -->
+        <div>
+          <h2 style="font-size:1.6rem; margin-bottom:1.5rem;">Contact Information</h2>
+
+          <div style="display:flex; flex-direction:column; gap:1.5rem;">
+            <div>
+              <h3 style="font-size:1rem; margin-bottom:0.3rem;">General Inquiries</h3>
+              <p><a href="mailto:info@marthasbakery.com" style="color:var(--red);">info@marthasbakery.com</a></p>
+              <p>(718) 555-0172</p>
+            </div>
+            <div>
+              <h3 style="font-size:1rem; margin-bottom:0.3rem;">Catering &amp; Events</h3>
+              <p><a href="mailto:catering@marthasbakery.com" style="color:var(--red);">catering@marthasbakery.com</a></p>
+              <p><a href="order.html" style="color:var(--chocolate); font-weight:600; text-decoration:underline;">Or use our online order form &rarr;</a></p>
+            </div>
+            <div>
+              <h3 style="font-size:1rem; margin-bottom:0.3rem;">Press &amp; Media</h3>
+              <p><a href="mailto:press@marthasbakery.com" style="color:var(--red);">press@marthasbakery.com</a></p>
+            </div>
+            <div>
+              <h3 style="font-size:1rem; margin-bottom:0.3rem;">Follow Us</h3>
+              <p>
+                <a href="#" style="color:var(--red);">Instagram</a> &nbsp;&middot;&nbsp;
+                <a href="#" style="color:var(--red);">Facebook</a> &nbsp;&middot;&nbsp;
+                <a href="#" style="color:var(--red);">Yelp</a>
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem; background:var(--cream); border-radius:10px; padding:1.5rem; border:1px solid var(--border);">
+            <h3 style="font-size:1rem; margin-bottom:0.5rem;">Response Time</h3>
+            <p style="font-size:0.88rem; color:#7a6652;">We typically respond within 24 hours on business days. For same-day orders, please call your nearest location directly.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-section" style="max-width:none;">
+          <h2 style="font-size:1.6rem; margin-bottom:1.5rem;">Send Us a Message</h2>
+          <form data-validate novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="c-name">Your Name *</label>
+                <input type="text" id="c-name" name="name" required placeholder="Maria Garcia" />
+                <span class="error-msg">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" name="email" required placeholder="maria@example.com" />
+                <span class="error-msg">Please enter a valid email address.</span>
+              </div>
+              <div class="form-group full">
+                <label for="c-subject">Subject *</label>
+                <select id="c-subject" name="subject" required>
+                  <option value="">-- Select a topic --</option>
+                  <option value="general">General Question</option>
+                  <option value="order">Order Inquiry</option>
+                  <option value="catering">Catering / Events</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="press">Press / Media</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-msg">Please select a subject.</span>
+              </div>
+              <div class="form-group full">
+                <label for="c-message">Message *</label>
+                <textarea id="c-message" name="message" required placeholder="Tell us how we can help..."></textarea>
+                <span class="error-msg">Please enter a message.</span>
+              </div>
+            </div>
+            <div class="form-submit" style="text-align:left;">
+              <button type="submit" class="btn btn-primary" style="font-size:1rem; padding:0.9rem 2.5rem;">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.jpg" alt="Martha's Country Bakery" />
+          </div>
+          <p>Family-owned since 1972.<br>Baking joy into every crumb.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html">Order / Catering</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours (Most Locations)</h4>
+          <ul>
+            <li><a>Mon – Fri: 7am – 7pm</a></li>
+            <li><a>Saturday: 7am – 7pm</a></li>
+            <li><a>Sunday: 8am – 6pm</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>&#9993; <a href="mailto:info@marthasbakery.com">info@marthasbakery.com</a></p>
+          <p>&#128222; (718) 555-0172</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

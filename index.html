@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martha's Country Bakery — Fresh from Our Oven, NYC</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Martha's Country Bakery logo" />
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" aria-label="Featured bakery images">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('images/menu1.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/Menu.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/menu3.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="tagline">Est. 1972 &mdash; New York City</p>
+      <h1>Baked Fresh,<br>Every Single Day</h1>
+      <p>Handcrafted cakes, pies &amp; croissants made from scratch at 5 NYC locations. Taste the tradition.</p>
+      <div class="hero-btns">
+        <a href="products.html" class="btn btn-primary">See Our Menu</a>
+        <a href="order.html" class="btn btn-outline" style="color:#fff;border-color:#fff;">Order / Catering</a>
+      </div>
+    </div>
+    <div class="hero-dots" role="tablist" aria-label="Slide controls">
+      <button role="tab" aria-label="Slide 1"></button>
+      <button role="tab" aria-label="Slide 2"></button>
+      <button role="tab" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- TODAY'S SPECIALS STRIP -->
+  <div class="specials-strip">
+    <p>&#127859; <strong>Today's Special:</strong> Tres Leches Cupcakes &mdash; $3.50 each &nbsp;|&nbsp; &#127859; Fresh Strawberry Pie &mdash; $22 whole &nbsp;|&nbsp; &#127859; Almond Croissants &mdash; $4.25</p>
+  </div>
+
+  <!-- LOCATION QUICK LINKS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Find Your Nearest Location</h2>
+      <p class="section-sub">Five beloved NYC neighborhoods, one family recipe.</p>
+      <div class="divider"></div>
+      <div class="location-grid">
+        <a href="locations.html" class="location-card">
+          <div class="pin">&#128205;</div>
+          <h3>Astoria</h3>
+          <p>31-10 31st Ave, Astoria, NY</p>
+          <p class="hours">Mon–Sat 7am–7pm</p>
+        </a>
+        <a href="locations.html" class="location-card">
+          <div class="pin">&#128205;</div>
+          <h3>Forest Hills</h3>
+          <p>70-28 Austin St, Forest Hills, NY</p>
+          <p class="hours">Mon–Sat 7am–7pm</p>
+        </a>
+        <a href="locations.html" class="location-card">
+          <div class="pin">&#128205;</div>
+          <h3>Bayside</h3>
+          <p>214-14 41st Ave, Bayside, NY</p>
+          <p class="hours">Mon–Sat 7am–6pm</p>
+        </a>
+        <a href="locations.html" class="location-card">
+          <div class="pin">&#128205;</div>
+          <h3>Brooklyn</h3>
+          <p>263 Bedford Ave, Brooklyn, NY</p>
+          <p class="hours">Mon–Sun 8am–8pm</p>
+        </a>
+        <a href="locations.html" class="location-card">
+          <div class="pin">&#128205;</div>
+          <h3>Manhattan</h3>
+          <p>145 W 72nd St, New York, NY</p>
+          <p class="hours">Mon–Sun 7am–8pm</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="favorites-section">
+    <div class="container">
+      <h2 class="section-title">Customer Favorites</h2>
+      <p class="section-sub">Made fresh every morning — sell out by noon.</p>
+      <div class="divider"></div>
+      <div class="favorites-grid">
+
+        <div class="fav-card">
+          <div class="fav-img" role="img" aria-label="Layered Chocolate Cake">&#127874;</div>
+          <div class="fav-info">
+            <h3>Layered Chocolate Cake</h3>
+            <p>Rich dark chocolate with ganache frosting. A Martha's classic since 1972.</p>
+            <span class="fav-badge">$38.00</span>
+          </div>
+        </div>
+
+        <div class="fav-card">
+          <div class="fav-img" role="img" aria-label="Butter Croissant">&#129360;</div>
+          <div class="fav-info">
+            <h3>Butter Croissant</h3>
+            <p>72-hour laminated dough, baked golden every morning at 6am.</p>
+            <span class="fav-badge">$3.75</span>
+          </div>
+        </div>
+
+        <div class="fav-card">
+          <div class="fav-img" role="img" aria-label="Fresh Strawberry Pie">&#127813;</div>
+          <div class="fav-info">
+            <h3>Fresh Strawberry Pie</h3>
+            <p>Local strawberries in a hand-pressed butter crust. Seasonal.</p>
+            <span class="fav-badge">$22.00</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="favorites-cta">
+        <a href="products.html" class="btn btn-outline">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMAIL SIGNUP -->
+  <div class="email-signup">
+    <h2>Get Today's Specials</h2>
+    <p>Sign up for our Daily Fresh Sheet — delivered every morning before 7am.</p>
+    <form class="signup-form" id="signup-form" novalidate>
+      <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Planning an Event?</h2>
+      <p>Custom cakes, catering trays &amp; dessert tables for birthdays, weddings &amp; corporate events.</p>
+      <a href="order.html" class="btn">Request a Catering Quote</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.jpg" alt="Martha's Country Bakery" />
+          </div>
+          <p>Family-owned since 1972.<br>Baking joy into every crumb.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html">Order / Catering</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours (Most Locations)</h4>
+          <ul>
+            <li><a>Mon – Fri: 7am – 7pm</a></li>
+            <li><a>Saturday: 7am – 7pm</a></li>
+            <li><a>Sunday: 8am – 6pm</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>&#9993; <a href="mailto:info@marthasbakery.com">info@marthasbakery.com</a></p>
+          <p>&#128222; (718) 555-0172</p>
+          <p style="margin-top:0.5rem;">Follow us:<br>
+            <a href="#">Instagram</a> &nbsp;|&nbsp;
+            <a href="#">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

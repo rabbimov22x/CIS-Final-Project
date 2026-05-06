@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products &mdash; Martha's Country Bakery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Martha's Country Bakery logo" />
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Products</p>
+    <h1>Our Menu</h1>
+    <p>Baked fresh daily — cakes, pies, croissants &amp; seasonal specials.</p>
+  </div>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" role="tablist" aria-label="Filter products by category">
+        <button class="filter-tab active" data-filter="all" role="tab">All Items</button>
+        <button class="filter-tab" data-filter="cakes" role="tab">Cakes</button>
+        <button class="filter-tab" data-filter="pies" role="tab">Pies</button>
+        <button class="filter-tab" data-filter="croissants" role="tab">Croissants</button>
+        <button class="filter-tab" data-filter="specials" role="tab">Daily Specials</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+
+        <!-- Cakes -->
+        <div class="product-card" data-category="cakes">
+          <div class="product-img" role="img" aria-label="Layered Chocolate Cake">&#127874;</div>
+          <div class="product-info">
+            <h3>Layered Chocolate Cake</h3>
+            <p>Dark chocolate sponge with ganache and buttercream. Serves 10–12.</p>
+            <span class="product-price">$38.00</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cakes">
+          <div class="product-img" role="img" aria-label="Vanilla Bean Birthday Cake">&#127874;</div>
+          <div class="product-info">
+            <h3>Vanilla Bean Birthday Cake</h3>
+            <p>Three-layer vanilla with Madagascar bean cream frosting.</p>
+            <span class="product-price">$34.00</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cakes">
+          <div class="product-img" role="img" aria-label="Red Velvet Cake">&#127874;</div>
+          <div class="product-info">
+            <h3>Red Velvet Cake</h3>
+            <p>Classic Southern red velvet with cream cheese frosting.</p>
+            <span class="product-price">$36.00</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cakes">
+          <div class="product-img" role="img" aria-label="Carrot Walnut Cake">&#127874;</div>
+          <div class="product-info">
+            <h3>Carrot Walnut Cake</h3>
+            <p>Spiced carrot cake studded with walnuts &amp; orange zest frosting.</p>
+            <span class="product-price">$35.00</span>
+          </div>
+        </div>
+
+        <!-- Pies -->
+        <div class="product-card" data-category="pies">
+          <div class="product-img" role="img" aria-label="Fresh Strawberry Pie">&#127813;</div>
+          <div class="product-info">
+            <h3>Fresh Strawberry Pie</h3>
+            <p>Local strawberries in a hand-pressed butter crust. Seasonal.</p>
+            <span class="product-price">$22.00</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="pies">
+          <div class="product-img" role="img" aria-label="Apple Cinnamon Pie">&#127822;</div>
+          <div class="product-info">
+            <h3>Apple Cinnamon Pie</h3>
+            <p>Granny Smith apples, brown sugar &amp; warm spices in a flaky crust.</p>
+            <span class="product-price">$20.00</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="pies">
+          <div class="product-img" role="img" aria-label="Key Lime Pie">&#129373;</div>
+          <div class="product-info">
+            <h3>Key Lime Pie</h3>
+            <p>Zesty Florida key limes with graham cracker crust &amp; meringue.</p>
+            <span class="product-price">$21.00</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="pies">
+          <div class="product-img" role="img" aria-label="Pecan Pie">&#127822;</div>
+          <div class="product-info">
+            <h3>Pecan Pie</h3>
+            <p>Southern-style with toasted pecans &amp; dark corn syrup filling.</p>
+            <span class="product-price">$23.00</span>
+          </div>
+        </div>
+
+        <!-- Croissants -->
+        <div class="product-card" data-category="croissants">
+          <div class="product-img" role="img" aria-label="Classic Butter Croissant">&#129360;</div>
+          <div class="product-info">
+            <h3>Classic Butter Croissant</h3>
+            <p>72-hour laminated dough, baked golden every morning at 6am.</p>
+            <span class="product-price">$3.75</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="croissants">
+          <div class="product-img" role="img" aria-label="Almond Croissant">&#129360;</div>
+          <div class="product-info">
+            <h3>Almond Croissant</h3>
+            <p>Filled with frangipane, topped with sliced almonds &amp; powdered sugar.</p>
+            <span class="product-price">$4.25</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="croissants">
+          <div class="product-img" role="img" aria-label="Chocolate Croissant">&#129360;</div>
+          <div class="product-info">
+            <h3>Chocolate Croissant</h3>
+            <p>Two batons of Valrhona dark chocolate wrapped in laminated dough.</p>
+            <span class="product-price">$4.50</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="croissants">
+          <div class="product-img" role="img" aria-label="Ham & Cheese Croissant">&#129360;</div>
+          <div class="product-info">
+            <h3>Ham &amp; Cheese Croissant</h3>
+            <p>Black Forest ham with Gruyère, baked until melted &amp; golden.</p>
+            <span class="product-price">$5.50</span>
+          </div>
+        </div>
+
+        <!-- Specials -->
+        <div class="product-card" data-category="specials">
+          <div class="product-img" role="img" aria-label="Tres Leches Cupcake">&#127829;</div>
+          <div class="product-info">
+            <h3>Tres Leches Cupcake &#11088; Today</h3>
+            <p>Soaked sponge with whipped cream &amp; a sprinkle of cinnamon.</p>
+            <span class="product-price">$3.50</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="specials">
+          <div class="product-img" role="img" aria-label="Seasonal Fruit Tart">&#127817;</div>
+          <div class="product-info">
+            <h3>Seasonal Fruit Tart</h3>
+            <p>Pastry cream in a buttery shell topped with fresh seasonal fruit.</p>
+            <span class="product-price">$6.00</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Need a Custom Order?</h2>
+      <p>Custom cakes for any occasion — weddings, birthdays, corporate events.</p>
+      <a href="order.html" class="btn">Place a Custom Order</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.jpg" alt="Martha's Country Bakery" />
+          </div>
+          <p>Family-owned since 1972.<br>Baking joy into every crumb.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html">Order / Catering</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours (Most Locations)</h4>
+          <ul>
+            <li><a>Mon – Fri: 7am – 7pm</a></li>
+            <li><a>Saturday: 7am – 7pm</a></li>
+            <li><a>Sunday: 8am – 6pm</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>&#9993; <a href="mailto:info@marthasbakery.com">info@marthasbakery.com</a></p>
+          <p>&#128222; (718) 555-0172</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
