@@ -1,6 +1,4 @@
-/* Martha's Country Bakery — Main JS */
-
-/* --- Active Nav Link --- */
+/* Active Nav Link */
 (function () {
   const links = document.querySelectorAll('nav ul li a');
   const current = window.location.pathname.split('/').pop() || 'index.html';
@@ -9,7 +7,7 @@
   });
 })();
 
-/* --- Hamburger Menu --- */
+/* Hamburger Menu */
 const hamburger = document.querySelector('.hamburger');
 const navMenu   = document.querySelector('nav ul');
 if (hamburger && navMenu) {
@@ -24,7 +22,7 @@ if (hamburger && navMenu) {
   });
 }
 
-/* --- Hero Slider --- */
+/*  Hero Slider */
 const slides = document.querySelectorAll('.hero-slide');
 const dots   = document.querySelectorAll('.hero-dots button');
 if (slides.length) {
@@ -41,7 +39,7 @@ if (slides.length) {
   dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
 }
 
-/* --- Product Filter Tabs --- */
+/*  Product Filter Tabs */
 const filterTabs = document.querySelectorAll('.filter-tab');
 const productCards = document.querySelectorAll('.product-card');
 if (filterTabs.length) {
@@ -59,7 +57,7 @@ if (filterTabs.length) {
   });
 }
 
-/* --- Form Validation (order.html & contact.html) --- */
+/* Form Validation (order.html & contact.html) */
 function validateField(input) {
   const group  = input.closest('.form-group');
   const errMsg = group?.querySelector('.error-msg');
@@ -99,7 +97,7 @@ forms.forEach(form => {
   });
 });
 
-/* --- Email Signup --- */
+/*  Email Signup */
 const signupForm = document.getElementById('signup-form');
 if (signupForm) {
   signupForm.addEventListener('submit', e => {

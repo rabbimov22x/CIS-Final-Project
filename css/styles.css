@@ -263,7 +263,7 @@ nav ul li a:visited { color: var(--espresso); }
 }
 .hero-dots button.active { background: #fff; }
 
-/* --- Section Utility --- */
+/* Section Utility  */
 .section { padding: 5rem 0; }
 .section-alt { background: var(--cream); }
 .section-title {
@@ -279,7 +279,7 @@ nav ul li a:visited { color: var(--espresso); }
 }
 
 
-/* --- Specials Strip --- */
+/*  Specials Strip  */
 .specials-strip {
   background: var(--chocolate);
   color: #fff;
@@ -292,7 +292,7 @@ nav ul li a:visited { color: var(--espresso); }
 }
 .specials-strip strong { color: var(--gold); }
 
-/* --- Location Cards --- */
+/*  Location Cards */
 .location-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -387,7 +387,7 @@ img.product-img {
   color: var(--red);
 }
 
-/* --- CTA Banner --- */
+/* CTA Banner */
 .cta-banner {
   background: var(--red);
   color: #fff;
@@ -497,7 +497,7 @@ textarea { resize: vertical; min-height: 120px; }
 .hours-table td { padding: 0.25rem 0; }
 .hours-table td:last-child { text-align: right; color: var(--espresso); font-weight: 600; }
 
-/* --- About Page --- */
+/* About Page  */
 .timeline { position: relative; max-width: 700px; margin: 0 auto; }
 .timeline::before {
   content: '';
@@ -558,7 +558,7 @@ textarea { resize: vertical; min-height: 120px; }
 .value-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
 .value-card p { font-size: 0.85rem; color: #7a6652; }
 
-/* --- Customer Favorites (home page) --- */
+/* Customer Favorites (home page) */
 .favorites-section {
   background: linear-gradient(160deg, #2a1a14 0%, #3C2F2F 50%, #5c3520 100%);
   padding: 5rem 0;
@@ -632,7 +632,7 @@ img.fav-img {
   .favorites-grid { grid-template-columns: 1fr; }
 }
 
-/* --- Email Signup --- */
+/* Email Signup */
 .email-signup {
   background: var(--cream);
   padding: 3rem 1.5rem;
@@ -650,7 +650,7 @@ img.fav-img {
 }
 .signup-form input { flex: 1; min-width: 200px; }
 
-/* --- Footer --- */
+/*  Footer */
 footer {
   background: var(--espresso);
   color: rgba(255,255,255,0.75);
@@ -689,7 +689,7 @@ footer {
 .footer-bottom a { color: rgba(255,255,255,0.5); }
 .footer-bottom a:hover { color: var(--gold); }
 
-/* --- Thank You Page --- */
+/* Thank You Page  */
 .thankyou-section {
   min-height: 70vh;
   display: flex;
