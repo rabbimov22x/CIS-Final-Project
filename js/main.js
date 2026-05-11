@@ -51,8 +51,9 @@ if (filterTabs.length) {
       tab.classList.add('active');
       const filter = tab.dataset.filter;
       productCards.forEach(card => {
+        const categories = card.dataset.category.split(' ');
         card.style.display =
-          (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+          (filter === 'all' || categories.includes(filter)) ? '' : 'none';
       });
     });
   });

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact &mdash; Martha's Country Bakery</title>
+  <title>Contact | Martha's Country Bakery</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
@@ -11,14 +11,15 @@
 
   <!-- HEADER -->
   <header>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <div class="nav-inner">
       <a href="index.html" class="logo">
-        <img src="images/logo.jpg" alt="Martha's Country Bakery logo" />
+        <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
       <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
@@ -26,16 +27,17 @@
           <li><a href="locations.html">Locations</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html" class="nav-order-btn">Order ASAP</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- PAGE HERO -->
-  <div class="page-hero">
+  <div id="main-content" class="page-hero">
     <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
     <h1>Get in Touch</h1>
-    <p>Questions, feedback, or special requests — we'd love to hear from you.</p>
+    <p>Questions, feedback, or special requests? We would love to hear from you.</p>
   </div>
 
   <!-- CONTACT SECTION -->
@@ -128,7 +130,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">
-            <img src="images/logo.jpg" alt="Martha's Country Bakery" />
+            <img src="images/logo.png" alt="Martha's Country Bakery" />
           </div>
           <p>Family-owned since 1972.<br>Baking joy into every crumb.</p>
         </div>
@@ -146,9 +148,9 @@
         <div class="footer-col">
           <h4>Hours (Most Locations)</h4>
           <ul>
-            <li><a>Mon – Fri: 7am – 7pm</a></li>
-            <li><a>Saturday: 7am – 7pm</a></li>
-            <li><a>Sunday: 8am – 6pm</a></li>
+            <li>Mon – Fri: 7am – 7pm</li>
+            <li>Saturday: 7am – 7pm</li>
+            <li>Sunday: 8am – 6pm</li>
           </ul>
         </div>
         <div class="footer-col">
