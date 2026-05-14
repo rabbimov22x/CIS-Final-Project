@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,7 +34,8 @@
   </header>
 
   <!-- PAGE HERO -->
-  <div id="main-content" class="page-hero">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <div class="page-hero">
     <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Products</p>
     <h1>Our Menu</h1>
     <p>Baked fresh daily: cakes, pies, croissants &amp; seasonal specials.</p>
@@ -45,12 +46,12 @@
     <div class="container">
 
       <!-- Filter Tabs -->
-      <div class="filter-tabs" role="tablist" aria-label="Filter products by category">
-        <button class="filter-tab active" data-filter="all" role="tab">All Items</button>
-        <button class="filter-tab" data-filter="cakes" role="tab">Cakes</button>
-        <button class="filter-tab" data-filter="pies" role="tab">Pies</button>
-        <button class="filter-tab" data-filter="croissants" role="tab">Croissants</button>
-        <button class="filter-tab" data-filter="specials" role="tab">Daily Specials</button>
+      <div class="filter-tabs" aria-label="Filter products by category">
+        <button class="filter-tab active" data-filter="all" type="button" aria-pressed="true">All Items</button>
+        <button class="filter-tab" data-filter="cakes" type="button" aria-pressed="false">Cakes</button>
+        <button class="filter-tab" data-filter="pies" type="button" aria-pressed="false">Pies</button>
+        <button class="filter-tab" data-filter="croissants" type="button" aria-pressed="false">Croissants</button>
+        <button class="filter-tab" data-filter="specials" type="button" aria-pressed="false">Daily Specials</button>
       </div>
 
       <!-- Product Grid -->
@@ -58,7 +59,7 @@
 
         <!-- Cakes -->
         <div class="product-card" data-category="cakes">
-          <img src="images/Chocolate_Cake.jpg" alt="Layered Chocolate Cake" class="product-img" />
+          <img src="images/chocolate-cake.jpg" alt="Layered Chocolate Cake" class="product-img" />
           <div class="product-info">
             <h3>Layered Chocolate Cake</h3>
             <p>Dark chocolate sponge with ganache and buttercream. Serves 10-12.</p>
@@ -67,7 +68,7 @@
         </div>
 
         <div class="product-card" data-category="cakes">
-          <img src="images/vanilla_bean.jpg" alt="Vanilla Bean Birthday Cake" class="product-img" />
+          <img src="images/vanilla_bean_cake.jpg" alt="Vanilla Bean Birthday Cake" class="product-img" />
           <div class="product-info">
             <h3>Vanilla Bean Birthday Cake</h3>
             <p>Three-layer vanilla with Madagascar bean cream frosting.</p>
@@ -76,7 +77,7 @@
         </div>
 
         <div class="product-card" data-category="cakes">
-          <img src="images/Red_Velvet.jpg" alt="Red Velvet Cake" class="product-img" />
+          <img src="images/red-velvet.jpg" alt="Red Velvet Cake" class="product-img" />
           <div class="product-info">
             <h3>Red Velvet Cake</h3>
             <p>Classic Southern red velvet with cream cheese frosting.</p>
@@ -85,7 +86,7 @@
         </div>
 
         <div class="product-card" data-category="cakes">
-          <img src="images/Carrot_Walnut.jpg" alt="Carrot Walnut Cake" class="product-img" />
+          <img src="images/carrot-wallnut-cake.jpg" alt="Carrot Walnut Cake" class="product-img" />
           <div class="product-info">
             <h3>Carrot Walnut Cake</h3>
             <p>Spiced carrot cake studded with walnuts &amp; orange zest frosting.</p>
@@ -104,7 +105,7 @@
         </div>
 
         <div class="product-card" data-category="pies">
-          <img src="images/Apple_pie.jpg" alt="Apple Cinnamon Pie" class="product-img" />
+          <img src="images/apple-pie.jpg" alt="Apple Cinnamon Pie" class="product-img" />
           <div class="product-info">
             <h3>Apple Cinnamon Pie</h3>
             <p>Granny Smith apples, brown sugar &amp; warm spices in a flaky crust.</p>
@@ -113,7 +114,7 @@
         </div>
 
         <div class="product-card" data-category="pies">
-          <img src="images/keyLime.jpg" alt="Key Lime Pie" class="product-img" />
+          <img src="images/key-lime-cake.jpg" alt="Key Lime Pie" class="product-img" />
           <div class="product-info">
             <h3>Key Lime Pie</h3>
             <p>Zesty Florida key limes with graham cracker crust &amp; meringue.</p>
@@ -122,7 +123,7 @@
         </div>
 
         <div class="product-card" data-category="pies">
-          <img src="images/Pecan_pie.jpg" alt="Pecan Pie" class="product-img" />
+          <img src="images/pecan-pie.jpg" alt="Pecan Pie" class="product-img" />
           <div class="product-info">
             <h3>Pecan Pie</h3>
             <p>Southern-style with toasted pecans &amp; dark corn syrup filling.</p>
@@ -132,7 +133,7 @@
 
         <!-- Croissants -->
         <div class="product-card" data-category="croissants">
-          <img src="images/Croissant.jpg" alt="Classic Butter Croissant" class="product-img" />
+          <img src="images/croissant.jpg" alt="Classic Butter Croissant" class="product-img" />
           <div class="product-info">
             <h3>Classic Butter Croissant</h3>
             <p>72-hour laminated dough, baked golden every morning at 6am.</p>
@@ -141,7 +142,7 @@
         </div>
 
         <div class="product-card" data-category="croissants">
-          <img src="images/almont_croissant.jpg" alt="Almond Croissant" class="product-img" />
+          <img src="images/almond-croissant.jpg" alt="Almond Croissant" class="product-img" />
           <div class="product-info">
             <h3>Almond Croissant</h3>
             <p>Filled with frangipane, topped with sliced almonds &amp; powdered sugar.</p>
@@ -150,7 +151,7 @@
         </div>
 
         <div class="product-card" data-category="croissants">
-          <img src="images/chocolate_croissant.jpg" alt="Chocolate Croissant" class="product-img" />
+          <img src="images/chocolate-croissant.jpg" alt="Chocolate Croissant" class="product-img" />
           <div class="product-info">
             <h3>Chocolate Croissant</h3>
             <p>Two batons of Valrhona dark chocolate wrapped in laminated dough.</p>
@@ -159,7 +160,7 @@
         </div>
 
         <div class="product-card" data-category="croissants">
-          <img src="images/Lemon_Croissant.jpg" alt="Lemon Curd Croissant" class="product-img" />
+          <img src="images/lemon-croissant.jpg" alt="Lemon Curd Croissant" class="product-img" />
           <div class="product-info">
             <h3>Lemon Curd Croissant</h3>
             <p>Bright house-made lemon curd piped into flaky laminated dough, dusted with powdered sugar.</p>
@@ -169,7 +170,7 @@
 
         <!-- Specials -->
         <div class="product-card" data-category="cakes specials">
-          <img src="images/trest_leche.jpg" alt="Tres Leches Cake" class="product-img" />
+          <img src="images/trest_leches-cake.jpg" alt="Tres Leches Cake" class="product-img" />
           <div class="product-info">
             <h3>Tres Leches Cake</h3>
             <p>Three-milk soaked sponge layered with whipped cream and a dusting of cinnamon. Serves 8-10.</p>
@@ -198,6 +199,7 @@
       <a href="order.html" class="btn">Place a Custom Order</a>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -235,8 +237,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
-        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2026 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2026 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
       </div>
     </div>
   </footer>

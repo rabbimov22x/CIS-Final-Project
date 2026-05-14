@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,7 +34,8 @@
   </header>
 
   <!-- PAGE HERO -->
-  <div id="main-content" class="page-hero">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <div class="page-hero">
     <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Locations &amp; Hours</p>
     <h1>Our Locations</h1>
     <p>Five NYC neighborhoods, one family recipe.</p>
@@ -61,6 +62,9 @@
             <p>&#128205; 31-10 31st Ave, Astoria, NY 11106</p>
             <p>&#128222; (718) 555-0101</p>
             <table class="hours-table" aria-label="Hours for Astoria location">
+              <thead class="visually-hidden">
+                <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+              </thead>
               <tr><td>Monday – Friday</td><td>7:00 am – 7:00 pm</td></tr>
               <tr><td>Saturday</td><td>7:00 am – 7:00 pm</td></tr>
               <tr><td>Sunday</td><td>8:00 am – 6:00 pm</td></tr>
@@ -82,6 +86,9 @@
             <p>&#128205; 70-28 Austin St, Forest Hills, NY 11375</p>
             <p>&#128222; (718) 555-0102</p>
             <table class="hours-table" aria-label="Hours for Forest Hills location">
+              <thead class="visually-hidden">
+                <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+              </thead>
               <tr><td>Monday – Friday</td><td>7:00 am – 7:00 pm</td></tr>
               <tr><td>Saturday</td><td>7:00 am – 7:00 pm</td></tr>
               <tr><td>Sunday</td><td>8:00 am – 6:00 pm</td></tr>
@@ -103,6 +110,9 @@
             <p>&#128205; 214-14 41st Ave, Bayside, NY 11361</p>
             <p>&#128222; (718) 555-0103</p>
             <table class="hours-table" aria-label="Hours for Bayside location">
+              <thead class="visually-hidden">
+                <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+              </thead>
               <tr><td>Monday – Friday</td><td>7:00 am – 6:00 pm</td></tr>
               <tr><td>Saturday</td><td>7:00 am – 6:00 pm</td></tr>
               <tr><td>Sunday</td><td>Closed</td></tr>
@@ -124,6 +134,9 @@
             <p>&#128205; 263 Bedford Ave, Brooklyn, NY 11211</p>
             <p>&#128222; (718) 555-0104</p>
             <table class="hours-table" aria-label="Hours for Brooklyn location">
+              <thead class="visually-hidden">
+                <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+              </thead>
               <tr><td>Monday – Friday</td><td>8:00 am – 8:00 pm</td></tr>
               <tr><td>Saturday</td><td>8:00 am – 8:00 pm</td></tr>
               <tr><td>Sunday</td><td>8:00 am – 8:00 pm</td></tr>
@@ -145,6 +158,9 @@
             <p>&#128205; 145 W 72nd St, New York, NY 10023</p>
             <p>&#128222; (212) 555-0105</p>
             <table class="hours-table" aria-label="Hours for Manhattan location">
+              <thead class="visually-hidden">
+                <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+              </thead>
               <tr><td>Monday – Friday</td><td>7:00 am – 8:00 pm</td></tr>
               <tr><td>Saturday</td><td>7:00 am – 8:00 pm</td></tr>
               <tr><td>Sunday</td><td>8:00 am – 7:00 pm</td></tr>
@@ -164,6 +180,7 @@
       <a href="order.html" class="btn">Order Online</a>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -201,8 +218,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
-        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2026 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2026 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
       </div>
     </div>
   </footer>

@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,7 +34,8 @@
   </header>
 
   <!-- PAGE HERO -->
-  <div id="main-content" class="page-hero">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <div class="page-hero">
     <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; About Us</p>
     <h1>Our Story</h1>
     <p>53 years of baking, one family, five boroughs.</p>
@@ -42,19 +43,19 @@
 
   <!-- INTRO -->
   <section class="section">
-    <div class="container" style="max-width:780px; text-align:center;">
+    <div class="container narrow-copy">
       <h2 class="section-title">A Family Tradition Since 1972</h2>
-      <p style="font-size:1.05rem; color:#5a4235; line-height:1.9;">
+      <p class="lead-copy">
         Martha Kowalski opened her first bakery in Astoria, Queens with a single oven, a recipe book passed down from her grandmother in Warsaw, and a fierce belief that the best ingredients make the best pastries. Five decades later, Martha's Country Bakery is a beloved New York institution, still family-owned, still baking everything from scratch, still using the finest butter and freshest local fruit we can find.
       </p>
     </div>
   </section>
 
   <!-- TEAM PHOTO -->
-  <div style="background:var(--cream); padding:3rem 0; text-align:center;">
+  <div class="team-section">
     <div class="container">
-      <img src="images/team.jpg" alt="The Martha's Country Bakery team" style="width:100%; max-width:800px; border-radius:12px; display:block; margin:0 auto; object-fit:cover;" />
-      <p style="margin-top:1rem; font-size:0.95rem; color:#7a5c4a; font-style:italic;">
+      <img src="images/team.jpg" alt="The Martha's Country Bakery team" class="team-photo" />
+      <p class="team-caption">
         We show up for the communities that have always shown up for us.
       </p>
     </div>
@@ -158,6 +159,7 @@
       <a href="locations.html" class="btn">Find a Location</a>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -195,8 +197,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
-        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2026 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2026 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
       </div>
     </div>
   </footer>

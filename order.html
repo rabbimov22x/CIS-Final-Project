@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,7 +34,8 @@
   </header>
 
   <!-- PAGE HERO -->
-  <div id="main-content" class="page-hero">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <div class="page-hero">
     <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Order &amp; Catering</p>
     <h1>Order &amp; Catering</h1>
     <p>Pickup, delivery, and catering for events of any size.</p>
@@ -44,37 +45,37 @@
   <section class="section">
     <div class="container">
       <div class="form-section">
-        <h2 class="section-title" style="text-align:left;">Place Your Order</h2>
+        <h2 class="section-title section-title-left">Place Your Order</h2>
 
-        <form data-validate novalidate>
+        <form data-validate data-success-url="thankyou.html" novalidate>
 
           <!-- Personal Info -->
-          <h3 style="margin-bottom:1rem; font-size:1.1rem;">Your Information</h3>
+          <h3 class="section-subheading">Your Information</h3>
           <div class="form-grid">
             <div class="form-group">
               <label for="first-name">First Name *</label>
               <input type="text" id="first-name" name="first-name" required placeholder="Maria" />
-              <span class="error-msg">Please enter your first name.</span>
+              <span class="error-msg" id="first-name-error">Please enter your first name.</span>
             </div>
             <div class="form-group">
               <label for="last-name">Last Name *</label>
               <input type="text" id="last-name" name="last-name" required placeholder="Garcia" />
-              <span class="error-msg">Please enter your last name.</span>
+              <span class="error-msg" id="last-name-error">Please enter your last name.</span>
             </div>
             <div class="form-group">
               <label for="email">Email Address *</label>
               <input type="email" id="email" name="email" required placeholder="maria@example.com" />
-              <span class="error-msg">Please enter a valid email address.</span>
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
             </div>
             <div class="form-group">
               <label for="phone">Phone Number *</label>
               <input type="tel" id="phone" name="phone" required placeholder="(718) 555-0100" />
-              <span class="error-msg">Please enter a valid phone number.</span>
+              <span class="error-msg" id="phone-error">Please enter a valid phone number.</span>
             </div>
           </div>
 
           <!-- Order Details -->
-          <h3 style="margin:2rem 0 1rem; font-size:1.1rem;">Order Details</h3>
+          <h3 class="section-subheading-spaced">Order Details</h3>
           <div class="form-grid">
             <div class="form-group">
               <label for="location">Pickup Location *</label>
@@ -86,7 +87,7 @@
                 <option value="brooklyn">Brooklyn: 263 Bedford Ave</option>
                 <option value="manhattan">Manhattan: 145 W 72nd St</option>
               </select>
-              <span class="error-msg">Please select a pickup location.</span>
+              <span class="error-msg" id="location-error">Please select a pickup location.</span>
             </div>
             <div class="form-group">
               <label for="order-type">Order Type *</label>
@@ -96,17 +97,17 @@
                 <option value="delivery">Delivery</option>
                 <option value="catering">Catering Event</option>
               </select>
-              <span class="error-msg">Please select an order type.</span>
+              <span class="error-msg" id="order-type-error">Please select an order type.</span>
             </div>
             <div class="form-group">
               <label for="pickup-date">Requested Date *</label>
               <input type="date" id="pickup-date" name="pickup-date" required />
-              <span class="error-msg">Please select a date.</span>
+              <span class="error-msg" id="pickup-date-error">Please select a date.</span>
             </div>
             <div class="form-group">
               <label for="pickup-time">Requested Time *</label>
               <input type="time" id="pickup-time" name="pickup-time" required />
-              <span class="error-msg">Please select a time.</span>
+              <span class="error-msg" id="pickup-time-error">Please select a time.</span>
             </div>
             <div class="form-group">
               <label for="guests">Number of Guests (for catering)</label>
@@ -126,15 +127,15 @@
               <label for="order-details">Order Details / Special Requests *</label>
               <textarea id="order-details" name="order-details" required
                 placeholder="e.g. 3 dozen tres leches cupcakes, 1 layered chocolate cake (serves 20), nut-free please..."></textarea>
-              <span class="error-msg">Please describe what you'd like to order.</span>
+              <span class="error-msg" id="order-details-error">Please describe what you'd like to order.</span>
             </div>
           </div>
 
           <div class="form-submit">
-            <button type="submit" class="btn btn-primary" style="font-size:1rem; padding:0.9rem 2.5rem;">
+            <button type="submit" class="btn btn-primary form-button-large">
               Submit Order Request
             </button>
-            <p style="margin-top:0.75rem; font-size:0.82rem; color:#7a6652;">
+            <p class="form-note">
               We will confirm your order by email within 24 hours.
             </p>
           </div>
@@ -143,6 +144,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -180,8 +182,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
-        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2026 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2026 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
       </div>
     </div>
   </footer>

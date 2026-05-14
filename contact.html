@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,7 +34,8 @@
   </header>
 
   <!-- PAGE HERO -->
-  <div id="main-content" class="page-hero">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <div class="page-hero">
     <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
     <h1>Get in Touch</h1>
     <p>Questions, feedback, or special requests? We would love to hear from you.</p>
@@ -43,57 +44,59 @@
   <!-- CONTACT SECTION -->
   <section class="section">
     <div class="container">
-      <div class="contact-two-col" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+      <div class="contact-two-col">
 
         <!-- Contact Info -->
         <div>
-          <h2 style="font-size:1.6rem; margin-bottom:1.5rem;">Contact Information</h2>
+          <h2 class="contact-heading">Contact Information</h2>
 
-          <div style="display:flex; flex-direction:column; gap:1.5rem;">
+          <div class="contact-stack">
             <div>
-              <h3 style="font-size:1rem; margin-bottom:0.3rem;">General Inquiries</h3>
-              <p><a href="mailto:info@marthasbakery.com" style="color:var(--red);">info@marthasbakery.com</a></p>
+              <h3>General Inquiries</h3>
+              <p><a href="mailto:info@marthasbakery.com" class="contact-link">info@marthasbakery.com</a></p>
               <p>(718) 555-0172</p>
             </div>
             <div>
-              <h3 style="font-size:1rem; margin-bottom:0.3rem;">Catering &amp; Events</h3>
-              <p><a href="mailto:catering@marthasbakery.com" style="color:var(--red);">catering@marthasbakery.com</a></p>
-              <p><a href="order.html" style="color:var(--chocolate); font-weight:600; text-decoration:underline;">Or use our online order form &rarr;</a></p>
+              <h3>Catering &amp; Events</h3>
+              <p><a href="mailto:catering@marthasbakery.com" class="contact-link">catering@marthasbakery.com</a></p>
+              <p><a href="order.html" class="contact-cta-link">Or use our online order form &rarr;</a></p>
             </div>
             <div>
-              <h3 style="font-size:1rem; margin-bottom:0.3rem;">Press &amp; Media</h3>
-              <p><a href="mailto:press@marthasbakery.com" style="color:var(--red);">press@marthasbakery.com</a></p>
+              <h3>Press &amp; Media</h3>
+              <p><a href="mailto:press@marthasbakery.com" class="contact-link">press@marthasbakery.com</a></p>
             </div>
             <div>
-              <h3 style="font-size:1rem; margin-bottom:0.3rem;">Follow Us</h3>
+              <h3>Follow Us</h3>
               <p>
-                <a href="#" style="color:var(--red);">Instagram</a> &nbsp;&middot;&nbsp;
-                <a href="#" style="color:var(--red);">Facebook</a> &nbsp;&middot;&nbsp;
-                <a href="#" style="color:var(--red);">Yelp</a>
+                <a href="https://www.instagram.com/marthascountrybakery" target="_blank" rel="noopener noreferrer" class="contact-link">Instagram</a>
+                ·
+                <a href="https://www.facebook.com/MarthasCountryBakery" target="_blank" rel="noopener noreferrer" class="contact-link">Facebook</a>
+                ·
+                <a href="https://www.yelp.com/biz/marthas-country-bakery" target="_blank" rel="noopener noreferrer" class="contact-link">Yelp</a>
               </p>
             </div>
           </div>
 
-          <div style="margin-top:2.5rem; background:var(--cream); border-radius:10px; padding:1.5rem; border:1px solid var(--border);">
-            <h3 style="font-size:1rem; margin-bottom:0.5rem;">Response Time</h3>
-            <p style="font-size:0.88rem; color:#7a6652;">We typically respond within 24 hours on business days. For same-day orders, please call your nearest location directly.</p>
+          <div class="info-card">
+            <h3>Response Time</h3>
+            <p>We typically respond within 24 hours on business days. For same-day orders, please call your nearest location directly.</p>
           </div>
         </div>
 
         <!-- Contact Form -->
-        <div class="form-section" style="max-width:none;">
-          <h2 style="font-size:1.6rem; margin-bottom:1.5rem;">Send Us a Message</h2>
-          <form data-validate novalidate>
+        <div class="form-section form-section-wide">
+          <h2 class="contact-heading">Send Us a Message</h2>
+          <form data-validate data-success-url="thankyou.html" novalidate>
             <div class="form-grid">
               <div class="form-group">
                 <label for="c-name">Your Name *</label>
                 <input type="text" id="c-name" name="name" required placeholder="Maria Garcia" />
-                <span class="error-msg">Please enter your name.</span>
+                <span class="error-msg" id="c-name-error">Please enter your name.</span>
               </div>
               <div class="form-group">
                 <label for="c-email">Email Address *</label>
                 <input type="email" id="c-email" name="email" required placeholder="maria@example.com" />
-                <span class="error-msg">Please enter a valid email address.</span>
+                <span class="error-msg" id="c-email-error">Please enter a valid email address.</span>
               </div>
               <div class="form-group full">
                 <label for="c-subject">Subject *</label>
@@ -106,16 +109,16 @@
                   <option value="press">Press / Media</option>
                   <option value="other">Other</option>
                 </select>
-                <span class="error-msg">Please select a subject.</span>
+                <span class="error-msg" id="c-subject-error">Please select a subject.</span>
               </div>
               <div class="form-group full">
                 <label for="c-message">Message *</label>
                 <textarea id="c-message" name="message" required placeholder="Tell us how we can help..."></textarea>
-                <span class="error-msg">Please enter a message.</span>
+                <span class="error-msg" id="c-message-error">Please enter a message.</span>
               </div>
             </div>
-            <div class="form-submit" style="text-align:left;">
-              <button type="submit" class="btn btn-primary" style="font-size:1rem; padding:0.9rem 2.5rem;">Send Message</button>
+            <div class="form-submit form-submit-left">
+              <button type="submit" class="btn btn-primary form-button-large">Send Message</button>
             </div>
           </form>
         </div>
@@ -123,6 +126,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -160,8 +164,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
-        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2026 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2026 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
       </div>
     </div>
   </footer>

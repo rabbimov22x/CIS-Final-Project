@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,11 +34,12 @@
   </header>
 
   <!-- HERO SLIDER -->
-  <section id="main-content" class="hero" aria-label="Featured bakery images">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <section class="hero" aria-label="Featured bakery images">
     <div class="hero-slides">
-      <div class="hero-slide active" style="background-image:url('images/menu1.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('images/Menu.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('images/menu3.jpg')"></div>
+      <div class="hero-slide hero-slide-menu-1 active"></div>
+      <div class="hero-slide hero-slide-menu-2"></div>
+      <div class="hero-slide hero-slide-menu-3"></div>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -47,19 +48,19 @@
       <p>Handcrafted cakes, pies &amp; croissants made from scratch at 5 NYC locations. Taste the tradition.</p>
       <div class="hero-btns">
         <a href="products.html" class="btn btn-primary">See Our Menu</a>
-        <a href="order.html" class="btn btn-outline" style="color:#fff;border-color:#fff;">Order / Catering</a>
+        <a href="order.html" class="btn btn-outline btn-outline-light">Order / Catering</a>
       </div>
     </div>
-    <div class="hero-dots" role="tablist" aria-label="Slide controls">
-      <button role="tab" aria-label="Slide 1"></button>
-      <button role="tab" aria-label="Slide 2"></button>
-      <button role="tab" aria-label="Slide 3"></button>
+    <div class="hero-dots" aria-label="Slide controls">
+      <button type="button" aria-label="Show slide 1" aria-current="true"></button>
+      <button type="button" aria-label="Show slide 2" aria-current="false"></button>
+      <button type="button" aria-label="Show slide 3" aria-current="false"></button>
     </div>
   </section>
 
   <!-- TODAY'S SPECIALS STRIP -->
   <div class="specials-strip">
-    <p>&#127859; <strong>Today's Special:</strong> Tres Leches Cake: $3.50 each &nbsp;|&nbsp; &#127859; Fresh Strawberry Pie: $22 whole &nbsp;|&nbsp; &#127859; Almond Croissants: $4.25</p>
+    <p><strong>Today's Special:</strong> Tres Leches Cake: $3.50 each &nbsp;|&nbsp; Fresh Strawberry Pie: $22 whole &nbsp;|&nbsp; Almond Croissants: $4.25</p>
   </div>
 
   <!-- LOCATION QUICK LINKS -->
@@ -110,7 +111,7 @@
       <div class="favorites-grid">
 
         <div class="fav-card">
-          <img src="images/Chocolate_Cake.jpg" alt="Layered Chocolate Cake" class="fav-img" />
+          <img src="images/chocolate-cake.jpg" alt="Layered Chocolate Cake" class="fav-img" />
           <div class="fav-info">
             <h3>Layered Chocolate Cake</h3>
             <p>Rich dark chocolate with ganache frosting. A Martha's classic since 1972.</p>
@@ -119,7 +120,7 @@
         </div>
 
         <div class="fav-card">
-          <img src="images/keyLime.jpg" alt="Key Lime Pie" class="fav-img" />
+          <img src="images/key-lime-cake.jpg" alt="Key Lime Pie" class="fav-img" />
           <div class="fav-info">
             <h3>Key Lime Pie</h3>
             <p>Zesty Florida key limes with graham cracker crust and meringue.</p>
@@ -128,7 +129,7 @@
         </div>
 
         <div class="fav-card">
-          <img src="images/Lemon_Croissant.jpg" alt="Lemon Curd Croissant" class="fav-img" />
+          <img src="images/lemon-croissant.jpg" alt="Lemon Curd Croissant" class="fav-img" />
           <div class="fav-info">
             <h3>Lemon Curd Croissant</h3>
             <p>Bright house-made lemon curd piped into flaky laminated dough, dusted with powdered sugar.</p>
@@ -149,9 +150,10 @@
     <p>Sign up for our Daily Fresh Sheet, delivered every morning before 7am.</p>
     <form class="signup-form" id="signup-form" novalidate>
       <label for="signup-email" class="visually-hidden">Email address</label>
-      <input type="email" id="signup-email" placeholder="your@email.com" aria-label="Email address" required />
+      <input type="email" id="signup-email" name="email" placeholder="your@email.com" aria-label="Email address" required />
       <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
+    <p id="signup-message" class="signup-message" aria-live="polite"></p>
   </div>
 
   <!-- CTA BANNER -->
@@ -162,6 +164,7 @@
       <a href="order.html" class="btn">Request a Catering Quote</a>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -196,15 +199,19 @@
           <h4>Contact</h4>
           <p>&#9993; <a href="mailto:info@marthasbakery.com">info@marthasbakery.com</a></p>
           <p>&#128222; (718) 555-0172</p>
-          <p style="margin-top:0.5rem;">Follow us:<br>
-            <a href="#">Instagram</a> &nbsp;|&nbsp;
-            <a href="#">Facebook</a>
-          </p>
+          <div class="footer-social">
+            <p>Follow us:</p>
+            <ul class="footer-social-list">
+              <li><a href="https://www.instagram.com/marthascountrybakery" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li>|</li>
+              <li><a href="https://www.facebook.com/MarthasCountryBakery" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Martha's Country Bakery. All rights reserved.</p>
-        <p>Last updated: May 2025 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2026 Martha's Country Bakery. All rights reserved.</p>
+        <p>Last updated: May 2026 &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></p>
       </div>
     </div>
   </footer>

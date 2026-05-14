@@ -16,11 +16,11 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Martha's Country Bakery logo" />
       </a>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul id="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="order.html">Order</a></li>
@@ -34,7 +34,8 @@
   </header>
 
   <!-- THANK YOU -->
-  <section id="main-content" class="thankyou-section">
+  <main id="main-content" class="main-content" tabindex="-1">
+  <section class="thankyou-section">
     <div class="thankyou-box">
       <div class="icon">&#127874;</div>
       <h1>Thank You!</h1>
@@ -42,12 +43,13 @@
         Your message has been received. We'll get back to you within 24 hours on business days.<br><br>
         In the meantime, why not browse our fresh baked goods?
       </p>
-      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <div class="thankyou-actions">
         <a href="index.html" class="btn btn-primary">Back to Home</a>
         <a href="products.html" class="btn btn-outline">View Our Menu</a>
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
