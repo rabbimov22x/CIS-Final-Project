@@ -852,6 +852,15 @@ footer {
 .thankyou-box .icon { font-size: 4rem; margin-bottom: 1rem; }
 .thankyou-box h1 { margin-bottom: 0.75rem; }
 .thankyou-box p { color: #7a6652; margin-bottom: 2rem; }
+.thankyou-actions .btn-outline {
+  background: var(--chocolate);
+  border-color: var(--chocolate);
+  color: #fff;
+}
+.thankyou-actions .btn-outline:hover {
+  background: var(--espresso);
+  border-color: var(--espresso);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
